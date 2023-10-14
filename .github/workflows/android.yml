@@ -21,7 +21,6 @@ jobs:
       - name: Build the app
         working-directory: ./project
         run: |
-          if [ ! -f "gradlew" ]; then gradle wrapper; fi
           chmod +x ./LimeStudio/gradlew
           ./LimeStudio/gradlew assembleDebug --stacktrace
       - name: Upload APK
