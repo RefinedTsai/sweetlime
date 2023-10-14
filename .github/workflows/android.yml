@@ -23,6 +23,7 @@ jobs:
         run: |
           chmod +x ./LimeStudio/gradlew
           ./LimeStudio/gradlew init
+          ./LimeStudio/gradlew --debug
           ./LimeStudio/gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v2
